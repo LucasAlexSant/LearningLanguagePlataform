@@ -8,10 +8,9 @@
   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Language</property>
   <property name="hibernate.connection.username">root</property>
   <property name="hibernate.connection.password">root</property>
-  <!-- Outras configurações -->
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
   <property name="hibernate.hbm2ddl.auto">update</property>
-  <!-- Mapeamento das classes de entidade -->
-  <mapping class="entities.User" />
+  <mapping class="entities.User"/>
+  
  </session-factory>
 </hibernate-configuration>

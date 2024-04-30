@@ -7,13 +7,21 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies> <!-- Esta é a seção onde você deve adicionar as dependências -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.5.7.Final</version> <!-- Versão atualizada do Hibernate -->
-        </dependency>
-        <!-- Adicione aqui outras dependências se necessário -->
-    </dependencies>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.5.7.Final</version> <!-- Versão atualizada do Hibernate -->
+
+
+		</dependency>
+		<dependency>
+
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.27</version> <!-- Versão atualizada do driver JDBC do
+			MySQL -->
+		</dependency>
+	</dependencies>
 
 
 </project>
