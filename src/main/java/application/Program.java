@@ -11,16 +11,16 @@ public class Program {
 
 			// Criar alguns usuários para teste
 			User user1 = new User();
-			user1.setNome("João Silva");
+			user1.setName("João Silva");
 			user1.setEmail("joao@example.com");
-			user1.setSenha("senha123");
-			user1.setIdiomaDeInteresse("Inglês");
+			user1.setpassword("password123");
+			user1.setinterestedLanguage("Inglês");
 
 			User user2 = new User();
-			user2.setNome("Maria Santos");
+			user2.setName("Maria Santos");
 			user2.setEmail("maria@example.com");
-			user2.setSenha("senha456");
-			user2.setIdiomaDeInteresse("Espanhol");
+			user2.setpassword("password456");
+			user2.setinterestedLanguage("Espanhol");
 
 			// Cadastrar os usuários
 			userDAO.registerUser(user1);

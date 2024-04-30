@@ -11,7 +11,7 @@ import entities.User;
 public class UserDAO {
     private SessionFactory sessionFactory;
 
-    public UserDAO() {
+    public UserDAO()  {
         // Carrega as configurações do Hibernate a partir do arquivo hibernate.cfg.xml
         Configuration configuration = new Configuration().configure();
         // Cria a fábrica de sessões com base nas configurações
