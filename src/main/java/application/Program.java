@@ -13,18 +13,25 @@ public class Program {
 			User user1 = new User();
 			user1.setName("João Silva");
 			user1.setEmail("joao@example.com");
-			user1.setpassword("password123");
-			user1.setinterestedLanguage("Inglês");
+			user1.setPassword("password123");
+			user1.setInterestedLanguage("Inglês");
 
 			User user2 = new User();
 			user2.setName("Maria Santos");
 			user2.setEmail("maria@example.com");
-			user2.setpassword("password456");
-			user2.setinterestedLanguage("Espanhol");
-
+			user2.setPassword("password456");
+			user2.setInterestedLanguage("Espanhol");
+			
+			User user3 = new User(null, "Lucas Santana", "Lucas@examlpe.com", "password123", "Inglês");
+			User user4 = new User(null, "Heitor Prado", "heitor2@example.com","password123", "japanese");
+			
+			
 			// Cadastrar os usuários
 			userDAO.registerUser(user1);
 			userDAO.registerUser(user2);
+			userDAO.registerUser(user3);
+			userDAO.removeUser(user3);
+
 		}
 
 	}

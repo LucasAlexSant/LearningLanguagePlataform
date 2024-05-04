@@ -20,18 +20,22 @@ public class UserLogin {
 	
 		public User login(String email, String password) {
 			try (Session session = sessionFactory.openSession()) {
+				
 	            // Consulta para encontrar o usuário com o e-mail fornecido
 	            Query<User> query = session.createQuery("FROM User WHERE email = :email", User.class);
 	            query.setParameter("email", email);
 	            User user = query.uniqueResult();
 	            
 	            // Verifica se o usuário foi encontrado e se a senha está correta
-	            if (user != null && user.getpassword().equals(password)) {
+	            if (user != null && user.getPassword().equals(password)) {
+	            	System.out.println("Login realizado com sucesso para o usuário: " + user.getName());
 	                return user; // Retorna o usuário autenticado
+	                
 	            }
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        }
+			System.out.println("Login failed. Incorrect credentials.");
 	        return null; // Retorna null se as credenciais estiverem incorretas
 	    }
 		
